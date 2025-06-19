@@ -1,2 +1,3 @@
 
-console.log("Welcome to KingCoin official site.");
+// You can include JavaScript logic here in future
+console.log("KingCoin site loaded.");
