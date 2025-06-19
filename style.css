@@ -1,16 +1,36 @@
 
 body {
+    font-family: Arial, sans-serif;
     background-color: #111;
     color: gold;
-    font-family: Arial, sans-serif;
     text-align: center;
+    padding: 20px;
 }
-header .btn {
-    background-color: #FFD700;
-    padding: 10px 20px;
-    color: black;
+
+.logo {
+    max-width: 180px;
+    margin-bottom: 20px;
+}
+
+.buttons .btn {
+    background-color: gold;
+    color: #000;
     text-decoration: none;
+    padding: 10px 20px;
     margin: 10px;
     display: inline-block;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.tokenomics {
+    background-color: #222;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }

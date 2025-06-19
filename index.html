@@ -2,21 +2,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KingCoin - The Coin of Kings</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <img src="kingcoin_logo.png" alt="KingCoin Logo" style="width:150px;">
+    <div class="container">
+        <img src="kingcoin_logo.png" alt="KingCoin Logo" class="logo" />
         <h1>Welcome to KingCoin</h1>
         <p>The powerful digital currency for the modern world.</p>
+
         <div class="buttons">
-            <a href="https://pancakeswap.finance/swap?outputCurrency=0xd8e3123616921233e1b6187e38100ed7cEE9E071" class="btn">Buy on PancakeSwap</a>
-            <a href="https://www.coingecko.com/en/coins/kingcoin" class="btn">Live Price on CoinGecko</a>
-            <a href="whitepaper.pdf" class="btn">Download Whitepaper (PDF)</a>
-            <a href="tokenomics.pdf" class="btn">Download Tokenomics (PDF)</a>
+            <a href="https://pancakeswap.finance/swap?outputCurrency=0xd8e3123616921233e1b6187e38100ed7cEE9E071" target="_blank" class="btn">Buy on PancakeSwap</a>
+            <a href="https://www.dextools.io/app/en/bnb/pair-explorer/0xd8e3123616921233e1b6187e38100ed7cEE9E071" target="_blank" class="btn">Live Price on DexTools</a>
         </div>
-    </header>
+
+        <section class="tokenomics">
+            <h2>Tokenomics</h2>
+            <ul>
+                <li><strong>Total Supply:</strong> 100,000,000 KING</li>
+                <li><strong>Network:</strong> Binance Smart Chain (BEP20)</li>
+                <li><strong>Type:</strong> Deflationary</li>
+                <li><strong>Utility:</strong> Gaming, Staking, Trading</li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
