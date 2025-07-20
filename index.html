@@ -1,88 +1,238 @@
-</a>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>KingCoin - The Coin of Kings</title>
-    <style>
-        body {
-            background-color: #111;
-            color: gold;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 30px;
-        }
-        .button {
-            background-color: gold;
-            color: black;
-            padding: 10px 20px;
-            margin: 10px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-        }
-        .section {
-            margin-top: 40px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KingCoin - The Coin of Kings</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1f004d, #000018);
+      color: #e0e0e0;
+      font-family: 'Orbitron', sans-serif;
+      padding: 0 20px;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 80px 20px 40px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    .logo {
+      width: 140px;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 0 10px #00ffee);
+      animation: pulseLogo 3s infinite ease-in-out;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      color: #00ffee;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 50px;
+    }
+
+    .button {
+      background: #00ffee;
+      color: #0a0a0a;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px #00ffeeaa;
+    }
+
+    .button:hover {
+      background: #1ae1e1;
+      transform: translateY(-3px);
+      box-shadow: 0 0 20px #1ae1e1cc;
+    }
+
+    .section {
+      margin: 60px 0;
+      padding: 30px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      animation: slideInUp 1s ease-out;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #00ffee;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 12px;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.03);
+      border-left: 4px solid #00ffee;
+      border-radius: 4px;
+      text-align: left;
+    }
+
+    .airdrop-button {
+      background: linear-gradient(135deg, #00ffee, #1ae1e1);
+      color: black;
+      font-weight: bold;
+      padding: 16px 28px;
+      border-radius: 40px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      margin: 20px 0;
+      display: inline-block;
+      box-shadow: 0 0 15px #00ffee99;
+      transition: transform 0.3s ease;
+    }
+
+    .airdrop-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px #1ae1e1aa;
+    }
+
+    footer {
+      margin-top: 80px;
+      padding: 20px;
+      color: #888;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulseLogo {
+      0%, 100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 10px #00ffee);
+      }
+      50% {
+        transform: scale(1.05);
+        filter: drop-shadow(0 0 20px #00ffeecc);
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .button, .airdrop-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+      }
+
+      .section {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <img src="kingcoin_logo.png" alt="KingCoin Logo" width="200">
-    <h1>Welcome to KingCoin</h1>
-    <p>The powerful digital currency for the modern world.</p>
 
-    <div>  <a class="button" href="https://pancakeswap.finance/swap?outputCurrency=0xd8e3123616921233e1b6187e38100ed7cEE9E071" target="_blank">Buy on PancakeSwap</a>
-            <a class="button" href="https://www.dextools.io/app/en/bnb/pair-explorer" target="_blank">Live Price on DexTools</a>
-        <a class="button" href="https://www.coingecko.com/en/coins/kingcoin" target="_blank">Live Price on CoinGecko</a>
-             <a class="button" href="https://bscscan.com/token/0xd8e3123616921233e1b6187e38100ed7cEE9E071" target="_blank">📊 View on BscScan</a>
-        <a class="button" href="urdu.html">Read in Urdu</a>
+  <header>
+    <img src="kingcoin_logo.png" alt="KingCoin Logo" class="logo" />
+    <h1>KingCoin</h1>
+    <p>The next-gen currency for gamers, traders, and kings of the blockchain.</p>
+
+    <div class="button-group">
+      <a class="button" href="https://pancakeswap.finance/swap?outputCurrency=0xd8e3123616921233e1b6187e38100ed7cEE9E071" target="_blank">Buy on PancakeSwap</a>
+      <a class="button" href="https://dextools.io/" target="_blank">DexTools</a>
+      <a class="button" href="https://coingecko.com/" target="_blank">CoinGecko</a>
+      <a class="button" href="https://bscscan.com/token/0xd8e3123616921233e1b6187e38100ed7cEE9E071" target="_blank">View on BscScan</a>
+      <a class="button" href="urdu.html">اردو</a>
+      <a class="button" href="whitepaper.pdf" target="_blank">Whitepaper 📄</a>
+      <a class="button" href="tokenomics.pdf" target="_blank">Tokenomics 📄</a>
     </div>
-   <a class="button" href="whitepaper.pdf" target="_blank">📄 Download Whitepaper (PDF)</a>
-    <a class="button" href="tokenomics.pdf" target="_blank">📄 Download Tokenomics (PDF)</a>
+  </header>
 
+  <div class="section">
+    <h2>🧠 Tokenomics</h2>
+    <p><strong>Total Supply:</strong> 100,000,000 KING</p>
+    <p><strong>Network:</strong> Binance Smart Chain (BEP20)</p>
+    <p><strong>Type:</strong> Deflationary</p>
+    <p><strong>Utility:</strong> Gaming, Staking, Trading</p>
+  </div>
 
-    <div class="section">
-        <h2>Tokenomics</h2>
-        <p><strong>Total Supply:</strong> 100,000,000 KING</p>
-        <p><strong>Network:</strong> Binance Smart Chain (BEP20)</p>
-        <p><strong>Type:</strong> Deflationary</p>
-        <p><strong>Utility:</strong> Gaming, Staking, Trading</p>
+  <div class="section">
+    <h2>🚀 Roadmap</h2>
+    <ul>
+      <li>Q6 2025: Launch Website & Whitepaper</li>
+      <li>Q8 2025: PancakeSwap Listing & Game Beta</li>
+      <li>Q8 2025: NFT Drop & Full Game Release</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🎁 KingCoin Airdrop</h2>
+    <p>Earn free $KING tokens — just fill out the form and join the royal revolution!</p>
+    <a class="airdrop-button" href="https://forms.gle/sdXzJEamdmxHhaJN8" target="_blank">
+      🪙 Claim Airdrop
+    </a>
+  </div>
+
+  <div class="section">
+    <h2>🌐 Connect With Us</h2>
+    <div class="button-group">
+      <a class="button" href="https://t.me/kingcoin233" target="_blank">Telegram</a>
+      <a class="button" href="https://twitter.com/kingcoin233" target="_blank">Twitter</a>
+      <a class="button" href="https://instagram.com/kingcoin233" target="_blank">Instagram</a>
+      <a class="button" href="https://facebook.com/kingcoin233" target="_blank">Facebook</a>
+      <a class="button" href="https://tiktok.com/@kingcoin233" target="_blank">TikTok</a>
+      <a class="button" href="https://youtube.com/@kingcoin233" target="_blank">YouTube</a>
     </div>
+  </div>
 
-    <div class="section">
-        <h2>Roadmap</h2>
-        <ul style="list-style-type:none;">
-            <li>📌 Q6 2025: Website & Whitepaper</li>
-            <li>📌 Q8 2025: PancakeSwap Launch & Game Beta</li>
-            <li>📌 Q8 2025: NFT Launch & Full Game Release</li>
-        </ul>
-    </div>
- <a href="https://forms.gle/sdXzJEamdmxHhaJN8" target="_blank" style="text-decoration: none;">
-  <button style="background-color: #FFD700; color: black; padding: 15px 25px; border: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer;">
-    🪙 Join Airdrop – Submit Google Form
-  </button>
-</a>
+  <footer>
+    <p>© 2025 KingCoin. Made for the decentralized future.</p>
+  </footer>
 
-<div class="section">
-  <h2>🎉 Join the KingCoin Airdrop</h2>
-  <p>Be a part of the revolution! Fill out the form and get free $KING tokens directly to your wallet.</p>
- </div>
-
-    <div class="section">
-<!-- Existing buttons -->
-<!-- New Telegram button -->
-<a href="https://t.me/kingcoin233" target="_blank" style="background-color: #229ED9; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; display: inline-block;">
-📲 Join Our Telegram Group
-</a>
-
-          <a class="button" href="https://twitter.com/kingcoin233" target="_blank">Twitter</a>
-        <a class="button" href="https://instagram.com/kingcoin233" target="_blank">Instagram</a>
-        <<a class="button" href="https://facebook.com/kingcoin233" target="_blank">Facebook</a>
-    </div>
-<a class="button" href="https://www.tiktok.com/@kingcoin233" target="_blank">TikTok</a>
-<a class="button" href="https://www.youtube.com/@kingcoin233" target="_blank">YouTube</a>
 </body>
 </html>
